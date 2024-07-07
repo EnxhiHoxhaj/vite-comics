@@ -54,7 +54,8 @@ export default {
 @use '../styles/general.scss' as *;
 
 header {
-    
+
+    color: white;
     nav {
         @include center();
     }
