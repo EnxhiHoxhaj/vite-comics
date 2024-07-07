@@ -1,6 +1,73 @@
 <script>
 export default {
     name: 'AppHeader',
+    data () {
+        return {
+            links: [
+            {
+                text: 'CHARACTERS',
+                url: '#',
+                current: false,
+                
+            },
+            {
+                text: 'COMICS',
+                url: '#',
+                current: false,
+                
+            },
+            {
+                text: 'MOVIES',
+                url: '#',
+                current: false,
+                
+            },
+            {
+                text: 'TV',
+                url: '#',
+                current: false,
+                
+            },
+            {
+                text: 'GAMES',
+                url: '#',
+                current: false,
+                
+            },
+            {
+                text: 'COLLECTIBLES',
+                url: '#',
+                current: false,
+                
+            },
+            {
+                text: 'VIDEOS',
+                url: '#',
+                current: false,
+                
+            },
+            {
+                text: 'FANS',
+                url: '#',
+                current: false,
+                
+            },
+            {
+                text: 'NEWS',
+                url: '#',
+                current: false,
+                
+            },
+            {
+                text: 'SHOP',
+                url: '#',
+                current: false,
+                
+            }
+            ]
+        }
+    
+}
 }
 </script>
 
@@ -12,37 +79,9 @@ export default {
             </div>
             <!-- navigazione -->
             <ul>
-                <li>
-                    <a href="#">CHARACTERS</a>
+                <li v-for="(linkHeader, index) in links" key="index">
+                    <a href="#">{{ linkHeader.text }}</a>
                 </li>
-                <li>
-                    <a href="#">HOME</a>
-                </li>
-                <li>
-                    <a href="#">ABCD</a>
-                </li>
-                <li>
-                    <a href="#">ABC</a>
-                </li>
-                <li>
-                    <a href="#">AB</a>
-                </li>
-                <li>
-                    <a href="#">CHARACTERS</a>
-                </li>
-                <li>
-                    <a href="#">HOME</a>
-                </li>
-                <li>
-                    <a href="#">ABCD</a>
-                </li>
-                <li>
-                    <a href="#">ABC</a>
-                </li>
-                <li>
-                    <a href="#">AB</a>
-                </li>
-
             </ul>
         </nav>
     </header>
@@ -55,7 +94,6 @@ export default {
 
 
     header {
-        border: solid black 0.5px;
         nav {
             margin: 1.2rem 14rem;
             @include center('horizontal');
