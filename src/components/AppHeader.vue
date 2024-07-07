@@ -59,13 +59,14 @@ export default {
 
 
     header {
+        border: solid black 0.5px;
         nav {
-            margin: 1rem 12rem;
+            margin: 1.2rem 14rem;
             @include center('horizontal');
             justify-content: space-between;
 
             .logo {
-            height: 60px;
+            height: 70px;
             width: 100px;
             }
 
