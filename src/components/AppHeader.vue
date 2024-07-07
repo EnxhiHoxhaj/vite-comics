@@ -84,7 +84,7 @@ export default {
                     a {
                         text-decoration: none;
                         color:$text_color;
-                        padding: 1rem 0;
+                        padding: 2.2rem 0;
                         &:hover {
                             border-bottom: solid $primary 0.3rem;
                         }
