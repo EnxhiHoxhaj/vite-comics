@@ -8,7 +8,7 @@ export default {
 <template>
 
     <div class="container">
-        <h2> --> Content goes hear </h2>
+        <h2> --> Content goes hear <-- </h2>
     </div>
 
 </template>
