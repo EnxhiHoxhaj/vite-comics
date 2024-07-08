@@ -29,7 +29,17 @@ export default {
 </script>
 
 <template>
-
+    <footer>
+        <section>
+            <button> {{ button }}</button>
+            <div>
+                <h3> {{ titleLink }}</h3>
+                <div v-for="(social, index ) in socials">
+                    <img :src="social.icon" alt="">
+                </div>
+            </div>
+        </section>
+    </footer>
 
 </template>
  
