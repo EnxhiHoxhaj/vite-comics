@@ -17,7 +17,7 @@ export default {
                     ]
                 },
                 {
-                    title: 'SHPO',
+                    title: 'SHOP',
                     menuItems: [
                         'Shop DC',
                         'Shop DC Collectiones',
@@ -57,8 +57,18 @@ export default {
 </script>
 
 <template>
-    <section>
- 
+    <section class="container">
+        <div class="colonna" v-for="( info, index) in linksFooter" key="index">
+            <ul>
+                <li class="title">
+                    <h3>{{ info.title }}</h3>
+                </li>
+                <li>
+                    <a href=""> {{ info.menuItems }}</a>
+                </li>
+            </ul>
+        </div>
+
     </section>
 
 </template>
@@ -68,5 +78,6 @@ export default {
 @use '../styles/partials/variables' as *;
 @use '../styles/partials/mixins' as *;
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 
 </style>
