@@ -3,7 +3,7 @@ export default {
     name: 'AppFooter',
     data () {
         return {
-            button: 'SIGN_UP NOW!',
+            button: 'SIGN UP NOW!',
             titleLink: 'FOLLOW US',
             socials: [
                 {
@@ -32,9 +32,9 @@ export default {
     <footer>
         <section>
             <button> {{ button }}</button>
-            <div>
+            <div class="right">
                 <h3> {{ titleLink }}</h3>
-                <div v-for="(social, index ) in socials">
+                <div class="icone_social" v-for="(social, index ) in socials">
                     <img :src="social.icon" alt="">
                 </div>
             </div>
@@ -48,5 +48,47 @@ export default {
 @use '../styles/partials/variables' as *;
 @use '../styles/partials/mixins' as *;
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+footer {
+    background-color: $geay_background;
+
+    section {
+        @include center('horizontal');
+        justify-content: space-between;
+        margin: 0 14rem;
+        padding: 1.5rem;
+
+        button {
+            padding: 0.5rem;
+            border-radius: 0;
+            border-style: none;
+            border:solid $light_text 0.1rem;
+            background-color: transparent;
+
+            &:hover {
+                box-sizing: border-box;
+                border-color: $primary
+            }
+        }
+
+        .right {
+            @include center('horizontal');
+            gap: 1rem;
+            font-family: "Bebas Neue", sans-serif;
+            font-size: 1.2rem;
+            color: $primary;
+
+            .icone_social {
+                width: 30px;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+
+        }
+    }
+}
 
 </style>
