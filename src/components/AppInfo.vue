@@ -79,5 +79,21 @@ export default {
 @use '../styles/partials/mixins' as *;
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
+.container {
+    background-image: url(/src/assets/dc-logo-bg.png), 
+    url(/src/assets/footer-bg.jpg);
+    background-repeat: no-repeat, repeat;
+    background-position: right top, top left;
+    padding: 3rem;
+    .colonna {
+        margin: 1.2rem 14rem;
+
+        ul li {
+            color: white;
+            list-style: none;
+
+        }
+    }
+}
 
 </style>
