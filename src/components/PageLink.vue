@@ -32,7 +32,7 @@ export default {
 </script>
 
 <template>
-        <div class="container">
+        <section class="container">
             <ul>
                 <li v-for="(image, index) in imgLink" key="index">
                     <div class="icone">
@@ -43,7 +43,7 @@ export default {
                     </div>
                 </li>
             </ul>
-        </div>
+        </section>
 </template>
 
 <style lang="scss" scoped>
