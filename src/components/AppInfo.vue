@@ -136,8 +136,9 @@ export default {
 </script>
 
 <template>
-    <section class="container">
-        <div class="colonna">
+    <section >
+        <div class="container">
+            <div class="colonna">
             <div class="dc_comics">
                 <ul v-for="(itemComics, index0) in comics" key="index0">
                     <li>
@@ -173,6 +174,8 @@ export default {
                 </ul>
             </div>
         </div>
+        </div>
+        
     </section>
 
 </template>
@@ -182,13 +185,17 @@ export default {
 @use '../styles/partials/variables' as *;
 @use '../styles/partials/mixins' as *;
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
+section {
+    background-image: url(src/assets/footer-bg.jpg);
+    background-size: cover;
+    position: relative;
+}
 .container {
-    background-image: url(src/assets/dc-logo-bg.png), 
-    url(src/assets/footer-bg.jpg);
-    background-repeat: no-repeat, repeat;
-    background-position: right top, top left;
-    padding: 3rem;
+    background-position-x: calc(100vw - 45rem) ;
+    background-image: url(src/assets/dc-logo-bg.png);
+    background-repeat: no-repeat;
+    background-size: 30%;
+    padding: 3rem 0;
     font-size: 0.9rem;
     display: flex;
 

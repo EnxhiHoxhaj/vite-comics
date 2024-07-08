@@ -54,7 +54,7 @@ export default {
 
 .container {
     background-color: $primary;
-    padding: 2rem 17rem;
+    padding: 2rem 18rem;
 
     ul {
         @include center('horizontal');

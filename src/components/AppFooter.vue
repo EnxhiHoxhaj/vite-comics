@@ -56,7 +56,7 @@ footer {
         @include center('horizontal');
         justify-content: space-between;
         margin: 0 14rem;
-        padding: 1.5rem;
+        padding: 1.5rem 0;
 
         button {
             padding: 0.5rem;

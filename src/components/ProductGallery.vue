@@ -7,9 +7,11 @@ export default {
 
 <template>
 
-    <div class="container">
-        <h2> --> Content goes hear <-- </h2>
-    </div>
+    <section class="container">
+        <div class="gallery">
+            <h2> --> Content goes hear <-- </h2>
+        </div> 
+    </section>
 
 </template>
 
@@ -20,9 +22,16 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 .container {
-    color: white;
+
     background-color: black;
-    padding: 3rem 15rem;
+    
+    
+
+    .gallery {
+        margin: 0 15rem;
+        padding: 4rem 0;
+        color: white;
+    }
 }
 
 </style>
