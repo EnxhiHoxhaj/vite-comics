@@ -138,42 +138,32 @@ export default {
 <template>
     <section class="container">
         <div class="colonna">
-            <ul>
+            <ul v-for="(itemComics, index0) in comics" key="index0">
                 <li class="title">
-                    <h3>{{  }}</h3>
-                </li>
-                <li>
-                    <a href=""> {{ item }}</a>
+                    <a href="#"> {{ itemComics.text }} </a>
                 </li>
             </ul>
         </div>
         <div class="colonna">
-            <ul>
+            <ul v-for="(itemShop, index1) in shop" key="index1">
                 <li class="title">
-                    <h3>{{  }}</h3>
+                    <a href="#"> {{ itemShop.text }} </a>
                 </li>
-                <li>
-                    <a href=""> {{ item }}</a>
+
+            </ul>
+        </div>
+        <div class="colonna" >
+            <ul v-for="(itemDc, index1) in dc" key="index1" >
+                <li class="title">
+                    <a href="#"> {{ itemDc.text }} </a>
                 </li>
+
             </ul>
         </div>
         <div class="colonna">
-            <ul>
+            <ul v-for="(itemDcComics, index1) in dcComics" key="index1">
                 <li class="title">
-                    <h3>{{  }}</h3>
-                </li>
-                <li>
-                    <a href=""> {{ item }}</a>
-                </li>
-            </ul>
-        </div>
-        <div class="colonna">
-            <ul>
-                <li class="title">
-                    <h3>{{  }}</h3>
-                </li>
-                <li>
-                    <a href=""> {{ item }}</a>
+                    <a href="#"> {{ itemDcComics.text }} </a>
                 </li>
             </ul>
         </div>
