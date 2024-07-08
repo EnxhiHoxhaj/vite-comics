@@ -17,13 +17,20 @@
 </script>
 
 <template>
-  <AppHeader/>
+  <header>
+    <AppHeader/>
+  </header>
+
   <main>
     <ProductGallery/>
     <PageLink/>
-    <AppInfo/>
   </main>
-  <AppFooter/>
+
+  <footer>
+    <AppInfo/>
+    <AppFooter/>
+  </footer>
+
 </template>
 
 <style lang="scss">

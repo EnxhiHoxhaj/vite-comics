@@ -4,69 +4,58 @@ export default {
     data () {
         return {
             links: [
-            {
-                text: 'CHARACTERS',
-                url: '#',
-                current: false,
-                
-            },
-            {
-                text: 'COMICS',
-                url: '#',
-                current: false,
-                
-            },
-            {
-                text: 'MOVIES',
-                url: '#',
-                current: false,
-                
-            },
-            {
-                text: 'TV',
-                url: '#',
-                current: false,
-                
-            },
-            {
-                text: 'GAMES',
-                url: '#',
-                current: false,
-                
-            },
-            {
-                text: 'COLLECTIBLES',
-                url: '#',
-                current: false,
-                
-            },
-            {
-                text: 'VIDEOS',
-                url: '#',
-                current: false,
-                
-            },
-            {
-                text: 'FANS',
-                url: '#',
-                current: false,
-                
-            },
-            {
-                text: 'NEWS',
-                url: '#',
-                current: false,
-                
-            },
-            {
-                text: 'SHOP',
-                url: '#',
-                current: false,
-                
-            }
+                {
+                    text: 'CHARACTERS',
+                    url: '#',
+                    current: true,                
+                },
+                {
+                    text: 'COMICS',
+                    url: '#',
+                    current: false,               
+                },
+                {
+                    text: 'MOVIES',
+                    url: '#',
+                    current: false,                
+                },
+                {
+                    text: 'TV',
+                    url: '#',
+                    current: false,                
+                },
+                {
+                    text: 'GAMES',
+                    url: '#',
+                    current: false,                
+                },
+                {
+                    text: 'COLLECTIBLES',
+                    url: '#',
+                    current: false,                
+                },
+                {
+                    text: 'VIDEOS',
+                    url: '#',
+                    current: false,               
+                },
+                {
+                    text: 'FANS',
+                    url: '#',
+                    current: false,               
+                },
+                {
+                    text: 'NEWS',
+                    url: '#',
+                    current: false,               
+                },
+                {
+                    text: 'SHOP',
+                    url: '#',
+                    current: false,           
+                }
             ]
-        }
-    
+        }  
 }
 }
 </script>
@@ -80,7 +69,7 @@ export default {
             <!-- navigazione -->
             <ul>
                 <li v-for="(linkHeader, index) in links" key="index">
-                    <a href="#">{{ linkHeader.text }}</a>
+                    <a :href="linkHeader.url" :class="linkHeader.current ? 'active' : ''">{{ linkHeader.text }}</a>
                 </li>
             </ul>
         </nav>
@@ -122,10 +111,12 @@ export default {
                     a {
                         text-decoration: none;
                         color:$text_color;
-                        padding: 2.2rem 0;
-                        &:hover {
+                        padding-bottom: 2.6rem;
+
+                        &:hover, &.active{
                             border-bottom: solid $primary 0.3rem;
                         }
+
                     }
                 }
             }

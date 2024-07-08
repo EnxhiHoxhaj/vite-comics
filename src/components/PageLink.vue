@@ -6,33 +6,23 @@ export default {
             imgLink: [
                 {
                     image: 'src/assets/buy-comics-digital-comics.png',
-                    url: '#',
                     text: 'DIGITAL COMICS',
-                    current: false,
                 },
                 {
                     image: 'src/assets/buy-comics-merchandise.png',
-                    url: '#',
                     text: 'DC MERCHANDISE',
-                    current: false,
                 },
                 {
                     image: 'src/assets/buy-comics-subscriptions.png',
-                    url: '#',
                     text: 'SUBSCRIPTION',
-                    current: false,
                 },
                 {
                     image: 'src/assets/buy-comics-shop-locator.png',
-                    url: '#',
                     text: 'COMICS SHOP LOCATOR',
-                    current: false,
                 },
                 {
                     image: 'src/assets/buy-dc-power-visa.svg',
-                    url: '#',
                     text: 'DC POWER VISA',
-                    current: false,
                 },
             ]
         }
