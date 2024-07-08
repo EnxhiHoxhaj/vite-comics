@@ -138,37 +138,41 @@ export default {
 <template>
     <section class="container">
         <div class="colonna">
-            <ul v-for="(itemComics, index0) in comics" key="index0">
-                <li class="title">
-                    <a href="#"> {{ itemComics.text }} </a>
-                </li>
-            </ul>
+            <div class="dc_comics">
+                <ul v-for="(itemComics, index0) in comics" key="index0">
+                    <li>
+                        <a href="#"> {{ itemComics.text }} </a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul v-for="(itemShop, index1) in shop" key="index1">
+                    <li>
+                        <a href="#"> {{ itemShop.text }} </a>
+                    </li>
+
+                </ul>
+            </div>
         </div>
         <div class="colonna">
-            <ul v-for="(itemShop, index1) in shop" key="index1">
-                <li class="title">
-                    <a href="#"> {{ itemShop.text }} </a>
-                </li>
+            <div>
+                <ul v-for="(itemDc, index1) in dc" key="index1" >
+                    <li>
+                        <a href="#"> {{ itemDc.text }} </a>
+                    </li>
 
-            </ul>
-        </div>
-        <div class="colonna" >
-            <ul v-for="(itemDc, index1) in dc" key="index1" >
-                <li class="title">
-                    <a href="#"> {{ itemDc.text }} </a>
-                </li>
-
-            </ul>
+                </ul>
+            </div>
         </div>
         <div class="colonna">
-            <ul v-for="(itemDcComics, index1) in dcComics" key="index1">
-                <li class="title">
-                    <a href="#"> {{ itemDcComics.text }} </a>
-                </li>
-            </ul>
+            <div>
+                <ul v-for="(itemDcComics, index1) in dcComics" key="index1">
+                    <li>
+                        <a href="#"> {{ itemDcComics.text }} </a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        
-
     </section>
 
 </template>
@@ -185,22 +189,41 @@ export default {
     background-repeat: no-repeat, repeat;
     background-position: right top, top left;
     padding: 3rem;
+    font-size: 0.9rem;
+    display: flex;
+
     .colonna {
-        margin: 1.2rem 14rem;
+        width: calc(40% / 3);
 
-        ul li {
-            color: white;
-            list-style: none;
+        &:first-child {
+            margin-left:14rem;
 
-            h3 {
+            .dc_comics {
+                margin-bottom: 1.2rem;
+            }
+        }
+
+        ul {
+
+            &:first-child {
+                margin-bottom: 0.4rem;
+                font-size: 1.5rem;
                 font-family: "Bebas Neue", sans-serif;
-            }
-            
-            a {
-                text-decoration: none;
                 color: white;
+
+                a {
+                    color: white;
+                }
             }
-            
+
+            li {
+                color: white;
+                list-style: none;    
+                a {
+                    text-decoration: none;
+                    color:$light_text;
+                }           
+            }
         }
     }
 }
