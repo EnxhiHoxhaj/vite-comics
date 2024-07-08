@@ -59,8 +59,8 @@ export default {
     ul {
         @include center('horizontal');
         justify-content: space-between ;
-        
         li {
+            font-weight: bold;
             list-style: none;
             @include center();
             gap: 1rem;

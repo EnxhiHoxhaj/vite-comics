@@ -3,53 +3,132 @@ export default {
     name: 'AppInfo',
     data () {
         return {
-            linksFooter:[
+            comics:[
                 {
-                    title: 'DC COMICS',
-                    menuItems: [
-                        'Characters',
-                        'Comics',
-                        'Movies',
-                        'TV', 
-                        'Games',
-                        'Videos',
-                        'News',
-                    ]
+                    text: 'DC COMICS',
+                    url: '#'
                 },
                 {
-                    title: 'SHOP',
-                    menuItems: [
-                        'Shop DC',
-                        'Shop DC Collectiones',
-                    ]
+                    text: 'Characters',
+                    url: '#'
                 },
                 {
-                    title: 'DC',
-                    menuItems: [
-                        'Terms Of Use',
-                        'Privacy policy (New)',
-                        'Ad Choices',
-                        'Adverstising', 
-                        'Jobs',
-                        'Subscriptions',
-                        'Talent Workshops',
-                        'CPSC Certifications',
-                        'Ratings',
-                        'shop Help',
-                        'Conctact Us', 
-                    ]
+                    text: 'Comics',
+                    url: '#'
                 },
                 {
-                    title: 'DC COMICS',
-                    menuItems: [
-                        'DC',
-                        'MAD Magazine',
-                        'DC Kids',
-                        'DC Universe', 
-                        'DC Power Visa',
-                    ]
+                    text: 'Movies',
+                    url: '#'
                 },
+                {
+                    text: 'TV',
+                    url: '#'
+                },
+                {
+                    text: 'Games',
+                    url: '#'
+                },
+                {
+                    text: 'Videos',
+                    url: '#'
+                },
+                {
+                    text: 'News',
+                    url: '#'
+                },
+            ],
+            shop: [
+            {
+                    text: 'SHOP',
+                    url: '#'
+                },
+                {
+                    text: 'Shop DC',
+                    url: '#'
+                },
+                {
+                    text: 'Shop DC Collectiones',
+                    url: '#'
+                },
+            ],
+            dc:[
+                {
+                    text: 'DC',
+                    url: '#'
+                },
+                {
+                    text: 'Terms Of Use',
+                    url: '#'
+                },
+                {
+                    text: 'Privacy policy (New)',
+                    url: '#'
+                },
+                {
+                    text: 'Ad Choices',
+                    url: '#'
+                },
+                {
+                    text: 'Adverstising',
+                    url: '#'
+                },
+                {
+                    text: 'Jobs',
+                    url: '#'
+                },
+                {
+                    text: 'Subscriptions',
+                    url: '#'
+                },
+                {
+                    text: 'Talent Workshops',
+                    url: '#'
+                },
+                {
+                    text: 'CPSC Certifications',
+                    url: '#'
+                },
+                {
+                    text: 'Ratings',
+                    url: '#'
+                },
+                {
+                    text: 'Shop Help',
+                    url: '#'
+                },
+                {
+                    text: 'Conctact Us',
+                    url: '#'
+                },
+            ],
+            dcComics:[
+                {
+                    text: 'DC COMICS',
+                    url: '#'
+                },
+                {
+                    text: 'DC',
+                    url: '#'
+                },
+                {
+                    text: 'MAD Magazine',
+                    url: '#'
+                },
+                {
+                    text: 'DC Kids',
+                    url: '#'
+                },
+                {
+                    text: 'DC Universe',
+                    url: '#'
+                },
+                {
+                    text: 'DC Power Visa',
+                    url: '#'
+                },
+
             ]
+
         }
     }
 }
@@ -58,16 +137,47 @@ export default {
 
 <template>
     <section class="container">
-        <div class="colonna" v-for="( info, index) in linksFooter" key="index">
+        <div class="colonna">
             <ul>
                 <li class="title">
-                    <h3>{{ info.title }}</h3>
+                    <h3>{{  }}</h3>
                 </li>
                 <li>
-                    <a href=""> {{ info.menuItems }}</a>
+                    <a href=""> {{ item }}</a>
                 </li>
             </ul>
         </div>
+        <div class="colonna">
+            <ul>
+                <li class="title">
+                    <h3>{{  }}</h3>
+                </li>
+                <li>
+                    <a href=""> {{ item }}</a>
+                </li>
+            </ul>
+        </div>
+        <div class="colonna">
+            <ul>
+                <li class="title">
+                    <h3>{{  }}</h3>
+                </li>
+                <li>
+                    <a href=""> {{ item }}</a>
+                </li>
+            </ul>
+        </div>
+        <div class="colonna">
+            <ul>
+                <li class="title">
+                    <h3>{{  }}</h3>
+                </li>
+                <li>
+                    <a href=""> {{ item }}</a>
+                </li>
+            </ul>
+        </div>
+        
 
     </section>
 
@@ -92,6 +202,15 @@ export default {
             color: white;
             list-style: none;
 
+            h3 {
+                font-family: "Bebas Neue", sans-serif;
+            }
+            
+            a {
+                text-decoration: none;
+                color: white;
+            }
+            
         }
     }
 }

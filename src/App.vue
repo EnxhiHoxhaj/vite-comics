@@ -35,5 +35,6 @@
 
 <style lang="scss">
 @use './styles/general.scss' as *;
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 </style>
