@@ -9,7 +9,6 @@ export default {
 
 <template>
 
-<h1>ci sonoo anche ioooo</h1>
 
 </template>
 

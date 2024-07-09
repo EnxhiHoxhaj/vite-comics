@@ -14,8 +14,10 @@ export default {
 <template>
 
     <section class="container">
-        <div class="gallery">
+        <div class="jumbo">
             <AppJumbo/>
+        </div>
+        <div class="gallery">
             <AppOptions/>
         </div> 
     </section>

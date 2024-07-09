@@ -7,17 +7,19 @@ export default {
 </script>
 
 <template>
-
-<h1>
-Io sto quiiiii
-</h1>
-
+    <section class="jumbo">
+    </section>
 </template>
 
 
 <style lang="scss" scoped>
-h1 {
-    color: white;
-    background-color: black;
+
+.jumbo {
+
+    height: 380px;
+    width: 100vw;
+    background-image: url(src/assets/img/jumbotron.jpg);
+    background-size: cover;
 }
+
 </style>
