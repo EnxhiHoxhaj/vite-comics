@@ -1,62 +1,67 @@
 <script>
 export default {
     name: 'AppHeader',
-    data () {
-        return {
-            links: [
-                {
-                    text: 'CHARACTERS',
-                    url: '#',
-                    current: true,                
-                },
-                {
-                    text: 'COMICS',
-                    url: '#',
-                    current: false,               
-                },
-                {
-                    text: 'MOVIES',
-                    url: '#',
-                    current: false,                
-                },
-                {
-                    text: 'TV',
-                    url: '#',
-                    current: false,                
-                },
-                {
-                    text: 'GAMES',
-                    url: '#',
-                    current: false,                
-                },
-                {
-                    text: 'COLLECTIBLES',
-                    url: '#',
-                    current: false,                
-                },
-                {
-                    text: 'VIDEOS',
-                    url: '#',
-                    current: false,               
-                },
-                {
-                    text: 'FANS',
-                    url: '#',
-                    current: false,               
-                },
-                {
-                    text: 'NEWS',
-                    url: '#',
-                    current: false,               
-                },
-                {
-                    text: 'SHOP',
-                    url: '#',
-                    current: false,           
-                }
-            ]
-        }  
-}
+    props: {
+        menuItems: Array
+    },
+
+    // data () {
+    //     return {
+    //         links: [
+    //             {
+    //                 text: 'CHARACTERS',
+    //                 url: '#',
+    //                 current: true,                
+    //             },
+    //             {
+    //                 text: 'COMICS',
+    //                 url: '#',
+    //                 current: false,               
+    //             },
+    //             {
+    //                 text: 'MOVIES',
+    //                 url: '#',
+    //                 current: false,                
+    //             },
+    //             {
+    //                 text: 'TV',
+    //                 url: '#',
+    //                 current: false,                
+    //             },
+    //             {
+    //                 text: 'GAMES',
+    //                 url: '#',
+    //                 current: false,                
+    //             },
+    //             {
+    //                 text: 'COLLECTIBLES',
+    //                 url: '#',
+    //                 current: false,                
+    //             },
+    //             {
+    //                 text: 'VIDEOS',
+    //                 url: '#',
+    //                 current: false,               
+    //             },
+    //             {
+    //                 text: 'FANS',
+    //                 url: '#',
+    //                 current: false,               
+    //             },
+    //             {
+    //                 text: 'NEWS',
+    //                 url: '#',
+    //                 current: false,               
+    //             },
+    //             {
+    //                 text: 'SHOP',
+    //                 url: '#',
+    //                 current: false,           
+    //             }
+    //         ]
+    //     }  
+    // }
+
 }
 </script>
 
@@ -68,7 +73,7 @@ export default {
             </div>
             <!-- navigazione -->
             <ul>
-                <li v-for="(linkHeader, index) in links" key="index">
+                <li v-for="(linkHeader, index) in menuItems" key="index">
                     <a :href="linkHeader.url" :class="linkHeader.current ? 'active' : ''">{{ linkHeader.text }}</a>
                 </li>
             </ul>
