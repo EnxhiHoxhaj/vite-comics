@@ -1,9 +1,11 @@
 <script>
 import AppJumbo from './AppJumbo.vue'
+import AppOptions from './AppOptions.vue'
 export default {
     name: 'ProductGallery',
     components: {
         AppJumbo,
+        AppOptions
     }
 }
 
@@ -14,6 +16,7 @@ export default {
     <section class="container">
         <div class="gallery">
             <AppJumbo/>
+            <AppOptions/>
         </div> 
     </section>
 
