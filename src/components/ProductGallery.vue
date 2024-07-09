@@ -1,6 +1,10 @@
 <script>
+import AppJumbo from './AppJumbo.vue'
 export default {
-    name: 'ProductGallery'
+    name: 'ProductGallery',
+    components: {
+        AppJumbo,
+    }
 }
 
 </script>
@@ -9,9 +13,10 @@ export default {
 
     <section class="container">
         <div class="gallery">
-            <h2> --> Content goes hear <-- </h2>
+            <AppJumbo/>
         </div> 
     </section>
+
 
 </template>
 
